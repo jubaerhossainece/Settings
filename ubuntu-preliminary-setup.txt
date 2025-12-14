@@ -1,0 +1,103 @@
+After installation of ubuntu follow below steps:
+
+1. nginx server
+Link:  http://nginx.org/en/linux_packages.html
+https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04
+
+
+2. apache2
+https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04
+
+
+3. php8.1 extensions
+
+sudo apt install -y php8.1 php8.1-cli php8.1-common php8.1-zip php8.1-gd php8.1-mbstring php8.1-curl php8.1-xml php8.1-bcmath php8.1-fpm
+
+4. To remove apache2 run:
+apt purge apache2 apache2-bin
+
+Link: https://www.digitalocean.com/community/tutorials/how-to-install-php-8-1-and-set-up-a-local-development-environment-on-ubuntu-22-04
+
+5. mysql
+sudo apt install mysql-server
+
+Link: https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-22-04
+
+##mysql permission issue
+link : https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
+
+6. composer
+Link: https://getcomposer.org/download/
+
+7. git
+  sudo apt install git
+
+7. vscode
+Links: https://code.visualstudio.com/docs/setup/linux
+extensions:  
+1. Material Theme  
+2. Code Snap (or Snippet)  
+3. Better Comments  
+4. Live Share (Live Preview)  
+5. Git History  
+6. Prettier  
+7. Auto Rename Tag  
+8. Auto Close Tag  
+9. Bracket  
+10. Import Cost  
+11. npm Intellisense  
+12. Postman  
+13. React Code Snippets  
+14. VSCode Icons  
+15. VSCode React Refactor  
+16. Auto Import - ES6, TS, JSX, TSX  
+17. Composer  
+18. Dev Containers  
+19. Docker  
+20. Even Better TOML  
+21. Git Graph  
+22. GitLens  
+23. GraphQL  
+24. GraphQL Syntax Highlighting  
+25. IntelliPHP - AI Autocomplete for PHP  
+26. Liquid  
+27. PHP  
+28. PHP Intelephense  
+29. PHP Profiler  
+
+
+
+8. nodejs, npm
+  Link: 
+    1) https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04 (Choose option 2)
+    2) https://github.com/nodesource/distributions/blob/master/README.md
+
+
+
+10. phpmyadmin with nginx
+link: 
+a) https://www.cloudbooklet.com/install-phpmyadmin-on-ubuntu-20-04-with-nginx/
+b) https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-with-nginx-on-an-ubuntu-20-04-server
+c) https://phoenixnap.com/kb/how-to-set-up-nginx-server-blocks-virtual-hosts-centos-7
+
+
+11. Phpmyadmin for apache
+
+sudo apt install phpmyadmin php-mbstring php-zip php-gd php-json php-curl
+
+Link:
+https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-20-04
+
+
+12. Google chrome
+# Download Google Chrome:
+  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+#Install Google Chrome
+  - sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+#Fix if broken
+  - sudo apt --fix-broken install
+
+
+
