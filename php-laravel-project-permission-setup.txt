@@ -1,0 +1,19 @@
+# Directories: 750 (rwxr-x---)
+find /path/to/project -type d -exec chmod 750 {} \;
+
+# PHP files: 640 (rw-r-----)
+find /path/to/project -type f -name "*.php" -exec chmod 640 {} \;
+
+# Other files: 640
+find /path/to/project -type f -exec chmod 640 {} \;
+
+# Writable directories (storage, cache): 770
+chmod -R 770 storage/
+
+# Set ownership consistently
+chown -R www-data:www-data /path/to/project
+
+
+Add yourself to the www-data group:
+bashsudo usermod -a -G www-data jubaer
+# Then log out and back in for it to take effect
